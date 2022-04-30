@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
 
         // menjalankan semua file seeder
+        $this->call(DiagnosaSeeder::class);
         $this->call(DokterSeeder::class);
         $this->call(KategoriSeeder::class);
         $this->call(PasienSeeder::class);
