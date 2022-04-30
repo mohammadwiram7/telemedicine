@@ -17,5 +17,7 @@ class DatabaseSeeder extends Seeder
 
         // menjalankan semua file seeder
         $this->call(DokterSeeder::class);
+        $this->call(KategoriSeeder::class);
+        $this->call(PasienSeeder::class);
     }
 }
