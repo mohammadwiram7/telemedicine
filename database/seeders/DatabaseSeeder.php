@@ -21,5 +21,6 @@ class DatabaseSeeder extends Seeder
         $this->call(KategoriSeeder::class);
         $this->call(ObatSeeder::class);
         $this->call(PasienSeeder::class);
+        $this->call(ResepSeeder::class);
     }
 }

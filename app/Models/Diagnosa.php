@@ -23,4 +23,10 @@ class Diagnosa extends Model
     {
         return $this->belongsTo(Pasien::class);
     }
+
+    // membuat relasi one to one
+    public function resep()
+    {
+        return $this->hasOne(Resep::class);
+    }
 }

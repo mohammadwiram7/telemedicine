@@ -23,4 +23,10 @@ class Dokter extends Model
     {
         return $this->hasMany(Diagnosa::class);
     }
+
+    // membuat relasi one to many
+    public function resep()
+    {
+        return $this->hasMany(Resep::class);
+    }
 }
